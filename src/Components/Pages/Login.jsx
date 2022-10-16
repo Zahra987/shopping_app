@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import '../../Css/orders.css';
 
 export default function Login() {
   return (
-    <div>Login</div>
+    <div className='order_container'>login</div>
   )
 }

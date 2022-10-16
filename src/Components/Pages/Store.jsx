@@ -8,22 +8,16 @@ import { loadProducts } from '../../redux/thunk';
 export default function Store() {
 
 const dispatch = useDispatch();
-const state = useSelector((state) => state);
-const products = state.productsReducer;
+const products = useSelector((state) => state.productsReducer);
+
 useEffect(()=>{
-dispatch(loadProducts())
+dispatch(loadProducts());
 },[])
 
   return (
-  
    <main>
      <section className='cards_container' >
-      {
-        products.map((product,index)=>
-         <Card product={product} />
-        )
-      }
+      {products.map((product,index) => <Card product={product} key={index} />)}
      </section>
    </main>
-  )
-}
+  )}

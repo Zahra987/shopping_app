@@ -1,7 +1,8 @@
-import React from 'react'
+import React from 'react';
+import '../../Css/orders.css';
 
 export default function Orders() {
   return (
-    <div>Orders</div>
+    <div className='order_container'>Orders</div>
   )
 }

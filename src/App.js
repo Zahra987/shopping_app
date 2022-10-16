@@ -9,6 +9,7 @@ import Saved from './Components/Pages/Saved';
 import AboutUs from './Components/Pages/AboutUs';
 import ContactUs from './Components/Pages/ContactUs';
 import Login from './Components/Pages/Login';
+import Footer from './Components/Footer';
 
 
 
@@ -27,6 +28,7 @@ function App() {
         <Route path='/contactus' element={<ContactUs/>} />
         <Route path='/login' element={<Login/>} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }

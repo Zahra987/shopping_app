@@ -1,10 +1,9 @@
 .cards_container{
-background-color: rgb(175, 178, 180);
 display: flex;
 justify-content:space-around;
 flex-wrap: wrap;
 padding:45px;
-
+padding-top: 95px;
 }
 .card_container{
 width:260px;
@@ -16,8 +15,10 @@ flex-direction:column;
 padding:15px;
 }
 .img_container{
-  text-align: center;
-  height:200px
+  height:200px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
 }
 .img_container img{
   width:55%;
@@ -90,4 +91,7 @@ background-color:rgb(89, 89, 210);
 }
 .neg_display{
   display:flex;
+}
+.second-display{
+  display: none;
 }

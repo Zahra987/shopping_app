@@ -6,8 +6,6 @@ export const loadProducts = () => async (dispatch, getState) => {
     //dispatch(reqStart());
   const response = await fetch('https://fakestoreapi.com/products')
   const allData = await response.json();
-  console.log(allData);
-  
   dispatch(loadProductsSuccess(allData));
   } catch (e) {
     //dispatch(reqFailed());

@@ -1,5 +1,7 @@
 .navbar_header{
   margin-top: 0px;
+  width: 100vw;
+  position: fixed;
 }
 
 .navbar_header .navbar_nav {
@@ -7,11 +9,12 @@
   justify-content:space-between;
   align-items:center;
   height:80px; 
-  background-color:rgb(131, 171, 252);
+  background-color:rgb(249, 185, 234);
   padding-left: 10px;
 }
 .navbar_header .navbar_nav .navbar_right{
   display:flex;
+  padding-right: 10px;
 }
 .navbar_header .navbar_nav .navbar_right .navbar_right_link .navbar_icons{
   display:flex;
