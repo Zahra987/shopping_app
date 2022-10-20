@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState,useEffect} from 'react';
 import '../../Css/cart.css';
 import CartHeader from '../CartHeader';
 import CartItem from '../CartItem';
@@ -9,6 +9,7 @@ export default function Cart() {
 
   const cartProducts = useSelector((state) => state.cartReducer);
   
+
   return (
    <>
     {(cartProducts.length == 0) ? <Vacant message='شما خریدی انجام نداده اید'/> : 
