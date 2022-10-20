@@ -25,7 +25,7 @@ export default function Card(props) {
   useEffect(()=>{
     if(item.length > 0){
       addCardRef.current.classList.add('second-display');
-      negRef.current.classList.add('neg_display')
+      negRef.current.classList.add('neg_display');
     } else{addCardRef.current.classList.add('add_card_container');}
     if (ite.length > 0) {saveRef.current.classList.add('save_icon');}
   },[])
@@ -68,6 +68,7 @@ export default function Card(props) {
                 onClick={()=>{
                  if(item[0].numberOfPurchases == 1){
                   addCardRef.current.classList.toggle('second-display');
+                  addCardRef.current.classList.add('add_card_container');
                   negRef.current.classList.toggle('neg_display');
                 }
               dispatch(decreasePurchases(item[0].product.id , item[0].numberOfPurchases));
